@@ -1,0 +1,503 @@
+body{
+    margin:0px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ::before,
+  ::after{
+      box-sizing: inherit;
+  }
+  
+ header .container{
+    position: relative;
+    padding: 5px 15%;
+    display: flex;
+    flex-direction: row;
+    background-color:#fca311;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    /*top: 0; */  
+}
+
+
+.logo{
+    
+    margin-right: auto;
+}
+.logo .bxl-kickstarter{
+    font-size: 40px;
+}
+   
+    
+
+.logo i:hover{
+    transform: scale(1.2);
+}
+
+.container .btncheckbox i{
+ padding: 0px 15px;
+ color: #14213d;
+ 
+}
+.nav {
+    display: flex;
+    gap: 16px;
+}
+.nav a{
+    text-decoration:none;
+    color: white;
+    padding: 5px; 
+
+}
+.nav a:hover{
+    color: #14213d;
+    font-weight: 700;
+}
+.container .bx-menu{
+    color: black;
+    font-size: 25px;
+}
+.checkbox{
+    display: none;
+    
+}
+.btncheckbox{
+    cursor: pointer;
+}
+.home {
+    background-image: url("https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1455");
+    background-size:cover;
+    background-position: 40px;
+    height: 700px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.home .content2 {
+    display:flex;
+    padding: 10px;
+    background-color: #14213d;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    align-items: center;
+    color: #e5e5e5;
+
+}
+.home .content1 ,h1,h3,p{margin:0;}
+.content1 p{
+    font-weight: 600;
+    color:#14213d;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.content1 h1{
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+.content1 .btnResume{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #14213d;
+    color: white;
+    font-size: 16px;
+}
+.content1 .btnResume:hover{cursor: pointer;}
+.content1 .iconos{
+    margin: 16px;
+    display: flex;
+    gap: 20px;
+}
+.content1 .iconos a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.acercademi .item2 img{
+    width: 400px;
+    height: 400px;
+
+}
+.item1{
+    grid-area: item1;
+    text-align: center;
+    
+}
+.item2{
+    grid-area: item2;
+    
+}
+.item3{
+    grid-area: item3;
+    text-align: center;
+    align-self: flex-end;
+    
+}
+.item4{
+    grid-area: item4;
+    text-align: center;
+    align-self:stretch;
+    
+}
+main .acercademi{
+    margin: 50px auto;
+    display: grid;
+    row-gap:0px;
+    height: 400px;
+    width: 100%;
+    
+    grid-template-areas: "item1 item1"
+                          "item2 item3"
+                          "item2 item4";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+main .misskills{
+    
+    padding: 20px;
+    background-color: #14213d;
+    text-align: center;
+    
+}
+main .misskills i{
+    font-size: 90px;
+    color: #f9b002;
+    padding: 20px;
+}
+
+.misskills h2{
+    color: #f9b002;
+}
+
+   
+
+.servicios{
+    padding: 80px 20px;
+    background-color: #14213d;
+    color: #e5e5e5;
+}
+.servicios .card1{
+    grid-area: card1;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+    
+}
+.servicios .card2{
+    grid-area: card2;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+    
+}
+.servicios .card3{
+    grid-area: card3;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+}
+.servicios .card4{
+    grid-area: card4;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+}
+.servicios .card5{
+    grid-area: card5;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+}
+.servicios .card6{
+    grid-area: card6;
+    padding: 20px;
+    text-align: center;
+    border:2px solid #000000;
+    border-radius: 8px;
+}
+
+.servicios .cards{
+    display: grid;
+    grid-template-areas: "card1 card2 card3"
+                          "card4 card5 card6";
+    column-gap: 16px;
+    row-gap: 16px;
+
+}
+.servicios .cards i {
+    font-size: 50px;
+    color: #fca311;
+    
+}
+.servicios h2{
+    text-align: center;
+}
+/*
+.bg-parallax{
+    position: relative;
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473");
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+.overlay{
+    background-color: #00000086;
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+}
+*/
+
+
+.portafolio{
+    padding: 0 20px 0 20px;
+    margin-top: 0;
+    background-color: #e5e5e5;
+
+}
+.portafolio h2{
+    text-align: center;
+} 
+.portafolio .trabajos {
+    display:flex;
+    width: 100%;
+    height: 300px;
+    column-gap: 20px;
+    justify-content: center;
+    /*grid-template-columns: 300px 200px 100px;*/
+    
+}  
+.portafolio .trabajos .class{
+    height:250px;
+    padding: 10px;
+    border: 1px solid black;
+    
+} 
+.portafolio .trabajos img{
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    
+} 
+
+ footer{
+    margin:0;
+    padding-top:0px;
+    padding-bottom: 0px;
+    max-width: auto;
+    
+  
+}   
+.footer-info{
+    background-color: #e5e5e5;
+}
+.footer h2{ 
+    text-align: center;
+    margin:40px;
+    color:rgb(0, 0, 0);
+    
+}
+.footer .item1b{
+    
+    grid-area: item1;
+    height: 50px;
+    border:rgb(0, 0, 0);
+    border: 1px solid ;
+        
+    
+}
+
+.footer .item2b{
+    grid-area: item2;
+    height: 50px;
+    border:rgb(0, 0, 0);
+    border: 1px solid ;
+    
+}
+.footer .item3b{
+    grid-area: item3;
+    height: 50px;
+    border:rgb(0, 0, 0);
+    border: 1px solid ;
+   
+}
+.footer .item4b{
+    grid-area: item4;
+    height: 150px;
+    border:rgb(0, 0, 0);
+    border: 1px solid ;
+}
+.footer .btn{
+    grid-area: btn;
+   
+    
+}
+.footer button{
+    background-color: #000000;
+    color: #f9b002;
+    width: 150px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.footer button:hover{
+    cursor: pointer;
+}
+.footer  p{
+    
+    margin: 10px;
+      
+  }
+
+.footer .datosContacto{
+    padding: 30px 30px 30px 5px;
+    display:grid;
+    margin: 70px;
+    grid-template-areas: "item1 item2"
+                          "item3 item3"
+                          "item4 item4"
+                          "btn btn";
+    column-gap: 30px; 
+    row-gap: 30px; 
+                       
+}
+
+.footer .datosMios {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    padding: 30px 0;
+    
+}
+.footer .datosMios .dato{
+    
+   display:flex;
+   justify-content:space-evenly;
+   column-gap: 12px;
+   align-items: center;
+   font-size: 14px;
+
+}
+
+.footer .datosMios .dato .info{
+    
+    margin: 0 auto;
+    padding:0 0 0 10px;
+    border: 1px solid;
+    border-bottom: none;
+    border-top:none ;
+    border-right: #000000;
+    color:#000000;
+    
+    
+}
+.footer .datosMios .dato .icono{
+    color: black;
+    font-size: 24px;
+    
+    
+}
+.footer .copy{
+    padding-bottom: 0;
+    background-color:#000000 ;
+    width: 100%;
+    height: 100px;
+    color: #fca311;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:700px) {
+    header .container{
+        justify-content:space-evenly;
+       
+    }
+    .container .nav{
+        position: absolute;
+        top:60px;
+        flex-direction: column;
+        justify-content: center;
+        background-color:#14213d;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        padding: 15px 0;
+        
+    }
+    .checkbox{
+        display: none;
+    }
+    /*.checkbox:checked nav:nth-last-of-type(1){
+        opacity: 1;
+        visibility: visible;
+    }*/
+    .btncheckbox{
+        cursor: pointer;
+    }
+    .container .nav a{
+        text-align: center;
+    }
+    .container .nav a:hover{
+        color: #fca311;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home .content1{
+        text-align: center;
+    }
+    .home .content1 .iconos{
+        
+        display: flex;
+        justify-content: center;
+    }
+    main .acercademi{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        
+    }
+    .footer .datosMios{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-left: 20px;
+        justify-content: center;
+    }
+   
+    .servicios .cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .portafolio .trabajos{
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        height: 700px;
+        background-size: cover;
+    }
+}
